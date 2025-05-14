@@ -1,14 +1,15 @@
 user = User.create!(
   email: "juan@example.com",
   full_name: "Juan Pérez",
-  role: "admin"
+  password: "password",
+  password_confirmation: "password"
 )
 
 5.times do |i|
   Task.create!(
     title: "Tarea #{i + 1}",
     description: "Descripción de la tarea #{i + 1}",
-    status: "pendiente",
+    status: 0,
     due_date: Date.today + i.days,
     user: user
   )
