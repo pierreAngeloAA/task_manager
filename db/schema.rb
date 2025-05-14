@@ -18,7 +18,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_05_14_011344) do
     t.datetime "created_at", null: false
     t.text "description"
     t.date "due_date"
-    t.string "status"
+    t.integer "status"
     t.string "title"
     t.datetime "updated_at", null: false
     t.bigint "user_id", null: false
@@ -29,7 +29,7 @@ ActiveRecord::Schema[8.1].define(version: 2025_05_14_011344) do
     t.datetime "created_at", null: false
     t.string "email"
     t.string "full_name"
-    t.string "role"
+    t.string "password_digest"
     t.datetime "updated_at", null: false
   end
 

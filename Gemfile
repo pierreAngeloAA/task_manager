@@ -64,3 +64,14 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
+end
+
+gem "active_model_serializers", "~> 0.10.0"
+gem "bcrypt", "~> 3.1.7"
+gem "dotenv-rails"
+gem "jwt"

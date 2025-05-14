@@ -1,8 +1,7 @@
 user = User.create!(
   email: "juan@example.com",
   full_name: "Juan Pérez",
-  password: "password",
-  password_confirmation: "password"
+  password: "password"
 )
 
 5.times do |i|
